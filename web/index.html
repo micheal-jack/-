@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <title>首页</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
+    <link rel="stylesheet" href="assets/css/ace.min.css" />
+    <link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="no-skin">
+    <div class="contain">
+        <!-- 收起展开按钮 -->
+        <div class="btn-up"></div>
+        <!-- 可收起展开的部分 -->
+        <div class="concealed">
+            <!-- header部分 -->
+            <div id="navbar" class="navbar navbar-default ace-save-state">
+                <div class="navbar-container ace-save-state" id="navbar-container">
+                    <!-- 左侧logo部分 -->
+                    <div class="navbar-header pull-left">
+                        <a href="index.html" class="navbar-brand">
+                                <img src="image/logo.png" alt="">
+                            </a>
+                    </div>
+                    <!-- 右侧用户头像 -->
+                    <div class="navbar-buttons navbar-header pull-right" role="navigation">
+                        <ul class="nav ace-nav">
+                            <li class="light-blue dropdown-modal">
+                                <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                                        <img class="nav-user-photo" src="assets/images/avatars/profile-pic.jpg" alt="Jason's Photo" />
+                                        <span class="user-info">
+                                            <small>欢迎</small>
+                                        </span>
+
+                                        <i class="ace-icon fa fa-caret-down"></i>
+                                    </a>
+                                <!-- 下拉菜单 -->
+                                <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                                    <li class="btnConfigure">
+                                        <a href="#">
+                                            <i class="ace-icon fa fa-cog"></i>
+                                                个性化配置
+                                            </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                                <i class="ace-icon fa fa-power-off"></i>
+                                                安全退出
+                                            </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.navbar-container -->
+            </div>
+            <!-- tab导航菜单 -->
+            <div id="main-container" class="main-container">
+                <div class="main-content">
+                    <div class="page-content">
+                        <div class="tabbable">
+                            <div class="redLine"></div>
+                            <i class="arrow-right swiper-button-prev"></i>
+                            <i class="arrow-left swiper-button-next"></i>
+                            <div class="ulWrapper swiper-container">
+                                <ul id="myTabTitle" class="nav nav-tabs swiper-wrapper">
+                                    <!-- 菜单1 -->
+                                    <li class="active homePage swiper-slide" data-index="1">
+                                        <a data-toggle="tab" href="#tab-home">
+                                        <i class="icon-menu icon-menu1"></i>
+                                        <b> 首页 </b>
+                                    </a>
+                                    </li>
+                                    <!-- 菜单2 -->
+                                    <li data-index="2" class="swiper-slide">
+                                        <a data-toggle="tab" href="#tab-oa">
+                                        <i class="icon-menu icon-menu2"></i>
+                                        <b> OA </b>
+                                    </a>
+                                    </li>
+                                    <!-- 菜单3 -->
+                                    <li data-index="3" class="swiper-slide">
+                                        <a data-toggle="tab" href="#tab-data">
+                                        <i class="icon-menu icon-menu3"></i>
+                                        <b> 基础数据基础数据基础数据基础数据基础数据基础数据 </b>
+                                    </a>
+                                    </li>
+                                    <!-- 菜单4 -->
+                                    <li data-index="4" class="swiper-slide">
+                                        <a data-toggle="tab" href="#tab-biw">
+                                        <i class="icon-menu icon-menu4"></i>
+                                        <b> BIW </b>
+                                    </a>
+                                    </li>
+                                    <!-- 菜单5 -->
+                                    <li data-index="5" class="swiper-slide">
+                                        <a data-toggle="tab" href="#tab-odc">
+                                        <i class="icon-menu icon-menu5"></i>
+                                        <b> ODC/OFCODC/OFCODC/OFCODC/OFC </b>
+                                    </a>
+                                    </li>
+                                    <!-- 菜单6 -->
+                                    <li data-index="6" class="swiper-slide">
+                                        <a data-toggle="tab" href="#tab-crm">
+                                        <i class="icon-menu icon-menu6"></i>
+                                        <b> CRM </b>
+                                    </a>
+                                    </li>
+                                    <!-- 菜单7 -->
+                                    <li data-index="7" class="swiper-slide">
+                                        <a data-toggle="tab" href="#tab-system">
+                                        <i class="icon-menu icon-menu7"></i>
+                                        <b> 工单系统 工单系统 工单系统 </b>
+                                    </a>
+                                    </li>
+                                    <!-- 菜单8 -->
+                                    <li data-index="8" class="swiper-slide">
+                                        <a data-toggle="tab" href="#tab-8">
+                                        <i class="icon-menu icon-menu8"></i>
+                                        <b> 测试标签测试标7777  </b>
+                                    </a>
+                                    </li>
+                                    <!-- 菜单9 -->
+                                    <li data-index="9" class="swiper-slide">
+                                        <a data-toggle="tab" href="#tab-9">
+                                        <i class="icon-menu icon-menu9"></i>
+                                        <b>标签测试标签测试88888  </b>
+                                    </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 可收起展开部分end -->
+        <div id="myTab" class="tab-content">
+            <!-- 菜单1对应内容-首页 -->
+            <div id="tab-home" class="tab-pane in active">
+                <div class="userContain">
+                    <div class="user">
+                        <div class="user-avatar">
+                            <img src="assets/images/avatars/profile-pic.jpg" alt="">
+                        </div>
+                        <div class="user-wrapper">
+                            <p class="user-title"><a href="javascript:;" class="user-name">张先生</a>您好！</p>
+                            <p class="user-welcome"><span>欢迎来到统一登录平台！</span>上次登录时间：2017-08-05 14：34</p>
+                        </div>
+                    </div>
+                    <!-- 新增内容公告，内部通知通告文件下载 -->
+                    <div class="notice">
+                        <!-- 内部通知 -->
+                        <div class="memo">
+                            <p class="pTitle">内部通知</p>
+                            <ul class="memoBox box">
+                                <li>
+                                    <a href="###">七乐康统一登录平台使用手册.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">习近平:扎实推动经济高质量发展扎实推进脱贫攻坚</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">习近平:要培育可持续发展资源.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">最高检:八类司法过程中陷困境未成年人将获救助.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">与你有关！政府工作报告透露2018年改革信号.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">韩媒：朴槿惠案一审宣判日期提前至3月16日.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">公交司机自费买雨衣送乘客：看他们淋雨挺心疼.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">七乐康统一登录平台使用手册.docx</a><span>2017-08-05</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 规章制度 -->
+                        <div class="rules">
+                            <p class="pTitle">规章制度</p>
+                            <ul class="rulesBox box">
+                                <li>
+                                    <a href="###">七乐康统一登录平台使用手册.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">习近平:扎实推动经济高质量发展扎实推进脱贫攻坚</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">习近平:要培育可持续发展资源.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">最高检:八类司法过程中陷困境未成年人将获救助.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">与你有关！政府工作报告透露2018年改革信号.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">韩媒：朴槿惠案一审宣判日期提前至3月16日.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">公交司机自费买雨衣送乘客：看他们淋雨挺心疼.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">七乐康统一登录平台使用手册.docx</a><span>2017-08-05</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 办事指南 -->
+                        <div class="guide">
+                            <p class="pTitle">办事指南</p>
+                            <ul class="guideBox box">
+                                <li>
+                                    <a href="###">七乐康统一登录平台使用手册.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">习近平:扎实推动经济高质量发展扎实推进脱贫攻坚</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">习近平:要培育可持续发展资源.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">最高检:八类司法过程中陷困境未成年人将获救助.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">与你有关！政府工作报告透露2018年改革信号.docx</a><span>2017-08-05</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 常用表单 -->
+                        <div class="commonForms">
+                            <p class="pTitle">常用表单</p>
+                            <ul class="commonFormsBox box">
+                                <li>
+                                    <a href="###">七乐康统一登录平台使用手册.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###" title="习近平:扎实推动经济高质量发展扎实推进脱贫攻坚习近平:扎实推动经济高质量发展扎实推进脱贫攻坚">习近平:扎实推动经济高质量发展扎实推进脱贫攻坚习近平:扎实推动经济高质量发展扎实推进脱贫攻坚</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">习近平:要培育可持续发展资源.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">最高检:八类司法过程中陷困境未成年人将获救助.docx</a><span>2017-08-05</span>
+                                </li>
+                                <li>
+                                    <a href="###">与你有关！政府工作报告透露2018年改革信号.docx</a><span>2017-08-05</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 统一登录平台系统操作说明 -->
+                        <div class="explain">
+                            <p class="pTitle">统一登录平台系统操作说明</p>
+                            <ul class="ex-ul box">
+                                <li><span class="order">01、</span><a href="javascript:;" class="ex-data">统一登录平台系统操作手册统一登录平台系统操作手册统一登录平台系统操作手册统一登录平台系统操作手册</a><span class="ex-time">2017-08-05</span></li>
+                                <li><span class="order">02、</span><a href="javascript:;" class="ex-data">统一登录平台系统操作视频</a><span class="ex-time">2017-08-05</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 菜单2对应内容-OA -->
+            <div id="tab-oa" class="tab-pane">
+                <iframe name="oaPage" id="oaPage" frameborder="0" src="http://oa.7lk.cn"></iframe>
+            </div>
+            <!-- 菜单3对应内容-基础数据 -->
+            <div id="tab-data" class="tab-pane">
+                <iframe name="dataPage" id="dataPage" frameborder="0" src=" http://sku.7lk.com"></iframe>
+            </div>
+            <!-- 菜单4对应内容-BIW -->
+            <div id="tab-biw" class="tab-pane">
+                <iframe name="biwPage" id="biwPage" frameborder="0" src="http://biw.7lk.com"></iframe>
+            </div>
+            <!-- 菜单5对应内容-ODC/OFC -->
+            <div id="tab-odc" class="tab-pane">
+                <iframe name="odcPage" id="odcPage" frameborder="0" src="http://oss.7lk.com"></iframe>
+            </div>
+            <!-- 菜单6对应内容-CRM -->
+            <div id="tab-crm" class="tab-pane">
+                <iframe name="crmPage" id="crmPage" frameborder="0" src="http://crm.7lk.com"></iframe>
+            </div>
+            <!-- 菜单7对应内容-工单系统 -->
+            <div id="tab-system" class="tab-pane">
+                <iframe name="systemPage" id="systemPage" frameborder="0" src="http://workorder.7lk.com"></iframe>
+            </div>
+            <!-- 菜单8对应内容- -->
+            <div id="tab-8" class="tab-pane">
+                <iframe name="crmPage" id="crmPage" frameborder="0" src=""></iframe>
+            </div>
+            <!-- 菜单9对应内容-CRM -->
+            <div id="tab-9" class="tab-pane">
+                <iframe name="crmPage" id="crmPage" frameborder="0" src=""></iframe>
+            </div>
+            <!-- 用户个性化设置部分 -->
+            <div class="configureWrapper">
+                <div class="configure">
+                    <img class="btn-close" src="image/closeWindow.png" alt="">
+                    <p class="configureTitle">用户自定义配置栏</p>
+                    <label for="fold" class="choose">
+                        <input type="checkbox" class="fold" id="fold" checked /> 开启导航栏自动折叠
+                    </label>
+                    <p class="configureInfo">TAB导航标签排序过滤</p>
+                    <table border='1' class="configureTable">
+                        <thead>
+                            <tr>
+                                <th>标签名称</th>
+                                <th>是否显示</th>
+                                <th>标签顺序</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                                <td>首页</td>
+                                <td>
+                                    <select class="check">
+                                        <option selected="selected">是</option>
+                                        <option>否</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="number">
+                                        <option selected="selected">1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>OA</td>
+                                <td>
+                                    <select class="check">
+                                        <option selected="selected">是</option>
+                                        <option>否</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="number">
+                                        <option>1</option>
+                                        <option selected="selected">2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>基础数据</td>
+                                <td>
+                                    <select class="check">
+                                        <option selected="selected">是</option>
+                                        <option>否</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="number">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option selected="selected">3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BIW</td>
+                                <td>
+                                    <select class="check">
+                                        <option selected="selected">是</option>
+                                        <option>否</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="number">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option selected="selected">4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>ODC/OFC</td>
+                                <td>
+                                    <select class="check">
+                                        <option selected="selected">是</option>
+                                        <option>否</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="number">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option selected="selected">5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CRM</td>
+                                <td>
+                                    <select class="check">
+                                        <option selected="selected">是</option>
+                                        <option>否</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="number">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option selected="selected">6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>工单系统</td>
+                                <td>
+                                    <select class="check">
+                                        <option selected="selected">是</option>
+                                        <option>否</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="number">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option selected="selected">7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>工单系统8</td>
+                                <td>
+                                    <select class="check">
+                                        <option selected="selected">是</option>
+                                        <option>否</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="number">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option selected="selected">8</option>
+                                        <option>9</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>工单系统9</td>
+                                <td>
+                                    <select class="check">
+                                        <option selected="selected">是</option>
+                                        <option>否</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="number">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option selected="selected">9</option>
+                                    </select>
+                                </td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                    <div class="tableInfo">
+                        <p>功能说明:</p>
+                        <p>设定为不显示的标签将不予显示</p>
+                        <p>标签排序不能为空，不能重复。最左边为1号标签</p>
+                    </div>
+                    <div class="btnContain">
+                        <button class="btn-submit">提交</button>
+                        <button class="btn-cancel">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/ace-extra.min.js"></script>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/ace-elements.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/ace-elements.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/ace.min.js"></script>
+    <script src="assets/js/ace-extra.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

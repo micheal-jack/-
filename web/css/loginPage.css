@@ -1,0 +1,190 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 12px;
+    font-family: "Microsoft YaHei", tahoma, verdana, sans-serif;
+}
+
+.main {
+    height: 100%;
+    background: url(../image/login-background.jpg) no-repeat right bottom fixed;
+    overflow: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    right: 36%;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.logo {
+    display: inline-block;
+    margin: 40px 0 0 50px;
+}
+
+.logo img {
+    display: block;
+    width: 292px;
+    height: 52px;
+}
+
+.aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36%;
+    bottom: 0;
+    overflow: hidden;
+    transition: width 0.3s ease-out;
+    background-color: #000;
+    opacity: 0.15;
+}
+
+.floatR {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36%;
+    bottom: 0;
+    transition: width 0.3s ease-out;
+}
+
+.loginArea {
+    position: absolute;
+    top: 33%;
+    left: 23%;
+    width: 54%;
+    color: #333;
+}
+
+.loginhead {
+    width: 100%;
+    line-height: 40px;
+    background: #e0e0e0;
+    overflow: hidden;
+    text-indent: 13px;
+    font-size: 15px;
+}
+
+
+
+/*css部分*/
+
+input.select {
+    display: none;
+}
+
+input.select+label {
+    background: url(../image/check.png) no-repeat 5px center;
+    height: 40px;
+    float: left;
+    text-indent: 24px;
+    width: 50%;
+    display: inline-block;
+    padding: 0 0 0 0px;
+}
+
+input.select:checked+label {
+    background-image: url(../image/check_on.png);
+}
+
+.loginArea .wrapper {
+    background-color: #fff;
+    opacity: 0.9;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.wrapper label {
+    float: left;
+    width: 45px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.wrapper label i {
+    display: block;
+    height: 18px;
+    width: 18px;
+    margin-top: 14px;
+    margin-left: 14px;
+    background: url(../image/people.png) center;
+    background-size: 100% 100%;
+}
+
+.wrapper label .iconfont2 {
+    background: url(../image/lock.png) center;
+    background-size: 100% 100%;
+}
+
+.wrapper .input-wrapper {
+    width: 100%;
+}
+
+
+.wrapper .sub-input-wrapper {
+    margin: 0 0 0 45px;
+}
+
+.wrapper .u-input {
+    background: none;
+    border: none;
+    padding: 5px 0;
+    color: #555;
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    width: 100%;
+    outline: none;
+    transition: background-color .3s ease-out, border-color .3s ease-out, color .3s ease-out;
+}
+
+.rc-hidden {
+    position: absolute !important;
+    left: -999em;
+}
+
+.form-item {
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    line-height: 40px;
+}
+
+
+.form-item2 {
+    line-height: 46px;
+    height: 46px;
+}
+
+.form-item2 .submit {
+    width: 100%;
+    font-weight: bold;
+    height: 46px;
+    font-size: 16px;
+    background-color: #3598db;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 4px;
+}
+.misdata {
+    display: none;
+    color: #f00;
+}
